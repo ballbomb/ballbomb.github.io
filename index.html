@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>圆球爆弹播放器</title> 
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+  <style>
+:root {
+  --primary: #2563eb; /* 普通蓝色 */
+  --bg-light: #ffffff; /* 白色背景 */
+  --text-black: #333333;
+  --text-gray: #666666;
+  --radius: 20px;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter', -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Microsoft YaHei",system-ui,sans-serif;}
+html,body{height:100%;background:var(--bg-light);color:var(--text-black);overflow-x:hidden;}
+
+/* 移除欢迎页 */
+
+header {
+  position:fixed;
+  top:0;
+  width:100%;
+  height:70px;
+  background:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 30px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+  z-index:100;
+}
+header .logo{font-size:26px;font-weight:bold;display:flex;align-items:center;gap:8px;}
+.logo-text {
+  color:var(--primary);
+}
+/* 删除三条杠（菜单按钮） */
+
+main{padding-top:90px;position:relative;z-index:1;}
+section{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;position:relative;}
+
+.hero{text-align:center;max-width:800px;width:100%;padding:40px 20px;}
+.hero-title{font-size:50px;font-weight:900;line-height:1.2;margin-bottom:20px;}
+.hero-title span{color:var(--primary);}
+.hero-desc{font-size:20px;color:var(--text-gray);margin-bottom:40px;line-height:1.6;max-width:600px;margin-left:auto;margin-right:auto;}
+.hero-btn{padding:16px 40px;border-radius:var(--radius);border:none;cursor:default;/* 按钮摆设，取消指针样式 */font-size:19px;font-weight:700;background:var(--primary);color:white;display:inline-flex;align-items:center;gap:10px;}
+/* 按钮仅为摆设，删除hover效果 */
+
+.panel{max-width:1200px;width:100%;margin:0 auto;padding:40px 20px;}
+.panel-title{font-size:40px;font-weight:800;margin-bottom:12px;text-align:center;}
+.panel-subtitle{color:var(--text-gray);font-size:18px;line-height:1.7;margin-bottom:60px;text-align:center;max-width:800px;margin-left:auto;margin-right:auto;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:30px;}
+.card{background:white;border-radius:var(--radius);padding:30px;box-shadow:0 10px 30px rgba(0,0,0,0.03);border:1px solid #eee;}
+.card h4{font-size:22px;margin-bottom:12px;text-align:center;}
+/* 移除卡片图标 */
+.card p{color:var(--text-gray);font-size:16px;text-align:center;line-height:1.6;margin-bottom:20px;}
+/* 删除图片展示 */
+
+.adv{max-width:900px;width:100%;margin:0 auto;padding:40px 20px;}
+.adv-title{font-size:40px;font-weight:800;margin-bottom:40px;text-align:center;}
+.adv-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:25px;}
+.adv-list li{font-size:18px;color:var(--text-gray);display:flex;align-items:center;gap:12px;}
+.adv-list li span{color:var(--primary);font-weight:800;font-size:24px;}
+
+footer{background:#f9f9f9;text-align:center;padding:50px 20px;color:var(--text-gray);font-size:16px;margin-top:80px;border-top:1px solid #eee;}
+.footer-text{max-width:600px;margin:0 auto;line-height:1.8;}
+
+/* 删除所有弹窗相关样式 */
+</style> 
+ </head> 
+ <body id="v1"> 
+  <!-- 移除欢迎页代码 -->
+  <header id="v5"> 
+   <div id="v6" class="logo"> 
+    <span id="v8" class="logo-text">圆球爆弹播放器</span> 
+   </div> 
+   <!-- 删除三条杠菜单按钮 -->
+  </header> 
+  <main id="main"> 
+   <section id="v12" class="hero"> 
+    <h1 id="v13" class="hero-title">圆球爆弹播放器 </h1> 
+    <p id="v14" class="hero-desc">功能拉满·流畅不卡·安全稳定·持续更新</p> 
+    <!--button class="hero-btn" id="openModal" onclick="window.location.href='https://share.weiyun.com/WvgsJ3Sz'">立即下载 </button--> 
+          <a href="https://www.123865.com/s/yAvaTd-60zCh" target="_blank" style="text-decoration:none;">
+        <div class="hero-btn">立即下载</div>
+      </a>
+    
+    
+    
+    <!-- 移除下载图标 -->
+   </section> 
+   <section id="v16" class="panel"> 
+    <h2 id="v17" class="panel-title">核心功能亮点</h2> 
+    <p id="v18" class="panel-subtitle">本地音乐、网易云音乐、循环播放、停止音乐等实用功能</p> 
+    <div id="v19" class="cards"> 
+     <div id="v20" class="card"> 
+      <h4 id="v21">完全免费</h4> 
+      <!-- 移除礼物图标 -->
+      <p id="v23">所有功能永久免费开放，不搞付费套路</p> 
+     </div> 
+     <div id="v25" class="card"> 
+      <h4 id="v26">流畅稳定</h4> 
+      <!-- 移除闪电图标 -->
+      <p id="v28">深度优化性能，低配置手机也能流畅运行</p> 
+     </div> 
+     <div id="v30" class="card"> 
+      <h4 id="v31">安全保障</h4> 
+      <!-- 移除盾牌图标 -->
+      <p id="v33">不窃取用户数据，多重防护更安心</p> 
+     </div> 
+     <div id="v35" class="card"> 
+      <h4 id="v36">持续更新</h4> 
+      <!-- 移除同步图标 -->
+      <p id="v38">紧跟游戏版本迭代，快速适配新内容</p> 
+     </div> 
+    </div> 
+   </section> 
+   <section id="v40" class="adv"> 
+    <h2 id="v41" class="adv-title">为什么选我们？</h2> 
+    <ul id="v42" class="adv-list"> 
+     <li id="v43"><span id="v44">✓</span> 永久免费无广告</li> 
+     <li id="v45"><span id="v46">✓</span> 功能全面无短板</li> 
+     <li id="v47"><span id="v48">✓</span> 运行流畅不卡顿</li> 
+     <li id="v49"><span id="v50">✓</span> 版本更新超及时</li> 
+     <li id="v51"><span id="v52">✓</span> 安全可靠无风险</li> 
+     <li id="v53"><span id="v54">✓</span> 新手操作超简单</li> 
+    </ul> 
+   </section> 
+   <footer id="v55"> 
+    <div id="v56" class="footer-text">
+      ©2025 圆球爆弹播放器 | 专注《音乐播放器》软件开发，为人民提供更好的音乐体验 
+    </div> 
+   </footer> 
+  </main> 
+  <!-- 移除所有弹窗代码 -->
+  <!-- 移除所有脚本（按钮为摆设，无需交互） -->
+ </body>
+</html>
